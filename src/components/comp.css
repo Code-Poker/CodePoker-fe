@@ -1,0 +1,23 @@
+.modal {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    left: 15%;
+    top: 15%;
+
+    background-color: white;
+    padding: 16px;
+    border: 1px solid #444;
+    border-radius: 0.5rem;
+    box-shadow: 4px 4px #88888866;
+}
+
+.background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.8;
+}
