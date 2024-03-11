@@ -12,7 +12,7 @@ import { createSignal } from "solid-js";
 export default function ProblemList(props) {
     console.log(props.problems)
   return (
-    <div class="grid md:grid-cols-3 xl:grid-cols-4 gap-6 w-full">
+    <div class="grid md:grid-cols-3 xl:grid-cols-4 gap-6 w-full overflow-scroll">
         <For each={props.problems}>
           { (prob) => <Problem {...prob} /> }
         </For>
@@ -22,7 +22,8 @@ export default function ProblemList(props) {
 
 function Problem(props) {
     const [tier, setTier] = createSignal('bg-[#000]');
-    if(props.level<7) setTier('bg-[#c67739]')
+    if(props.level==0) setTier('bg-gray-900 text-red-500')
+    else if(props.level<7) setTier('bg-[#c67739]')
     else if(props.level<21) setTier('bg-[#4e6a86]')
     else if(props.level<60) setTier('bg-[#ffb028]')
     else if(props.level<159) setTier('bg-[#51fdbd]')
@@ -34,8 +35,7 @@ function Problem(props) {
     return (
         <a href={link}>
             <div class={tier()}>
-                {props.id} : {props.title}
-                {props.level}
+                {props.id} : {props.title} {"\t"} {props.level}
             </div>
         </a>
     )

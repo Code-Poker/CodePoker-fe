@@ -1,0 +1,6 @@
+npm ERR! Missing script: "start:dev"
+npm ERR! 
+npm ERR! To see a list of scripts, run:
+npm ERR!   npm run
+
+npm ERR! A complete log of this run can be found in: /home/sccc/.npm/_logs/2024-03-09T15_24_47_388Z-debug-0.log

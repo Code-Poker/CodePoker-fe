@@ -1,6 +1,6 @@
 {
   "\u0000virtual:#vinxi/handler/client.css": {
-    "file": "assets/client-f131f4fa.css",
+    "file": "assets/client-a89f92b0.css",
     "src": "\u0000virtual:#vinxi/handler/client.css"
   },
   "node_modules/shikiji/dist/onig.wasm": {
@@ -9,9 +9,9 @@
   },
   "virtual:#vinxi/handler/client": {
     "css": [
-      "assets/client-f131f4fa.css"
+      "assets/client-a89f92b0.css"
     ],
-    "file": "assets/client-8eca56fa.js",
+    "file": "assets/client-c3e7bb88.js",
     "isEntry": true,
     "src": "virtual:#vinxi/handler/client"
   }

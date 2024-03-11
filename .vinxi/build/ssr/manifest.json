@@ -1,6 +1,6 @@
 {
   "\u0000virtual:#vinxi/handler/ssr.css": {
-    "file": "assets/ssr-f131f4fa.css",
+    "file": "assets/ssr-a89f92b0.css",
     "src": "\u0000virtual:#vinxi/handler/ssr.css"
   },
   "node_modules/shikiji/dist/onig.wasm": {
@@ -9,7 +9,7 @@
   },
   "virtual:#vinxi/handler/ssr": {
     "css": [
-      "assets/ssr-f131f4fa.css"
+      "assets/ssr-a89f92b0.css"
     ],
     "file": "ssr.js",
     "isEntry": true,

@@ -5,6 +5,7 @@ import { getPokerResult } from "../api";
 import clickOutside from "./click-outside";
 import './comp.css'
 import ProblemList from "./problem-list";
+import { Portal } from "solid-js/web";
 
 export default function ResultView(props) {
   const [pokerId, setPokerId] = createSignal('recent');
@@ -28,10 +29,12 @@ function Modal(props) {
   return (
     <>
       <Show when={show()} fallback={<button onClick={(e) => setShow(true)}>{chd()}</button>} >
+	  <Portal>
         <div class="background"></div>
         <div class="modal" use:clickOutside={() => setShow(false)}>
             <ProblemList {...props} />
         </div>
+	  </Portal>
       </Show>
     </>
   );
@@ -57,7 +60,6 @@ function Profile(props) {
                 <img width='30' height='30' src="https://static.solved.ac/logo.svg" />
             </Show>
           </div>
-          <p class="text-sm text-gray-500 dark:text-gray-400">tier placeholder</p>
         </div>
         <div class="items-center px-6 pb-6 flex justify-between">
           <div class="flex flex-col text-sm">

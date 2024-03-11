@@ -1,5 +1,8 @@
 .modal {
-    position: absolute;
+    position: fixed;
+    left: 15%;
+    top: 15%;
+
     width: 70%;
     height: 70%;
     left: 15%;
@@ -13,11 +16,11 @@
 }
 
 .background {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     background-color: white;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     opacity: 0.8;
 }
