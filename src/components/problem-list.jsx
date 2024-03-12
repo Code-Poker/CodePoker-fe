@@ -10,7 +10,6 @@ import { createSignal } from "solid-js";
 // 412 509 606 703 800 
 
 export default function ProblemList(props) {
-    console.log(props.problems)
   return (
     <div class="grid md:grid-cols-3 xl:grid-cols-4 gap-6 w-full overflow-y-scroll h-full">
         <For each={props.problems}>
